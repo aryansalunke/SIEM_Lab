@@ -31,6 +31,7 @@ First, you'll need to install the Wazuh manager on your Ubuntu VM. Open a termin
 **Add the Wazuh GPG key**: This step verifies the packages you're about to install, ensuring their authenticity.
 
 `curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg`
+
 **Download and execute the installation script**: The `-a` flag installs all necessary components (the manager and the indexer), and `-i` runs the script in interactive mode.
 
 
