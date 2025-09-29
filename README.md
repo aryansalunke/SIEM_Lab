@@ -1,5 +1,5 @@
 # Wazuh Home Lab - SIEM and File Integrity Monitoring
-Welcome! This guide walks you through setting up a basic Security Information and Event Management (SIEM) system for learning and experimentation using **Wazuh**. This project was inspired by a fantastic guide by Royden Rebello (The Social Dork) and his companion YouTube video, which I highly recommend following along with for a complete walkthrough.
+Welcome! This guide walks you through setting up a basic Security Information and Event Management (SIEM) system for learning and experimentation using **Wazuh**.
 
 My setup includes a Wazuh manager, a Windows agent, and the configuration for file integrity monitoring.
 
@@ -77,7 +77,7 @@ This is the final step to get the two components talking to each other.
 
 Once the agent registers successfully, you'll be able to see it on the Wazuh dashboard.
 
-**Setting Up File Integrity Monitoring (FIM)**
+## **Setting Up File Integrity Monitoring (FIM)**
 
 Wazuh uses a feature called **Syscheck** to monitor file and folder changes in real time.
 
@@ -89,7 +89,7 @@ Wazuh uses a feature called **Syscheck** to monitor file and folder changes in r
 
 **Restart the agent**: After saving the changes, restart the Wazuh agent service to apply the new configuration.
 
-**Verification**
+## **Verification**
 
 To make sure everything is working as expected, I recommend the following checks:
 
