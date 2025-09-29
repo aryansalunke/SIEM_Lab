@@ -25,6 +25,7 @@ Before you begin, make sure you have the following ready to go:
 
 ## Installation Steps
 1. **Install the Wazuh Manager on Ubuntu**
+
 First, you'll need to install the Wazuh manager on your Ubuntu VM. Open a terminal and run the following commands.
 
 **Add the Wazuh GPG key**: This step verifies the packages you're about to install, ensuring their authenticity.
