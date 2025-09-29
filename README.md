@@ -1,2 +1,1 @@
-# SIEM_Lab
-yooo
+# Wazuh Home Lab - SIEM and File Integrity Monitoring
