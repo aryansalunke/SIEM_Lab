@@ -51,6 +51,7 @@ Next, you need to install the agent on the Windows machine you want to monitor.
 * Run the MSI package on your Windows system, using the default settings for the installation.
 
 4. **Register the Agent with the Manager**
+ 
 This is the final step to get the two components talking to each other.
 
 **Generate an agent key on the Ubuntu Manager**:
