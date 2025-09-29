@@ -77,6 +77,7 @@ This is the final step to get the two components talking to each other.
 Once the agent registers successfully, you'll be able to see it on the Wazuh dashboard.
 
 **Setting Up File Integrity Monitoring (FIM)**
+
 Wazuh uses a feature called **Syscheck** to monitor file and folder changes in real time.
 
 **Edit the agent configuration file**: On your Windows host, open `C:\Program Files (x86)\ossec-agent\ossec.conf`.
@@ -88,6 +89,7 @@ Wazuh uses a feature called **Syscheck** to monitor file and folder changes in r
 **Restart the agent**: After saving the changes, restart the Wazuh agent service to apply the new configuration.
 
 **Verification**
+
 To make sure everything is working as expected, I recommend the following checks:
 
 1. Open the Wazuh Dashboard in your browser.
