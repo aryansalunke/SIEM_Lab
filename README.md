@@ -6,32 +6,30 @@ My setup includes a Wazuh manager, a Windows agent, and the configuration for fi
 ## Lab Architecture
 The lab is designed with a simple two-component architecture:
 
-* Wazuh Manager: This runs on an Ubuntu virtual machine (VM). It's the brain of the operation, responsible for collecting, analyzing, and storing all the data sent by the agents.
+* **Wazuh Manager**: This runs on an Ubuntu virtual machine (VM). It's the brain of the operation, responsible for collecting, analyzing, and storing all the data sent by the agents.
 
-* Wazuh Agent: This runs on my Windows host machine. Its job is to collect system logs and events and send them securely to the Wazuh manager.
+* **Wazuh Agent**: This runs on my Windows host machine. Its job is to collect system logs and events and send them securely to the Wazuh manager.
 
-To allow seamless communication between the host and the Ubuntu VM, I've used a bridged adapter in VirtualBox. This makes the VM appear as a separate device on my network, just like the Windows machine.
+To allow seamless communication between the host and the Ubuntu VM, I've used a **bridged adapter** in VirtualBox. This makes the VM appear as a separate device on my network, just like the Windows machine.
 
-Prerequisites
+## Prerequisites
 Before you begin, make sure you have the following ready to go:
 
-VirtualBox installed.
+* **VirtualBox** installed.
 
-An Ubuntu Server 20.04+ VM installed in VirtualBox with bridged networking already configured.
+* An **Ubuntu Server 20.04+ VM** installed in VirtualBox with bridged networking already configured.
 
-Internet access on the Ubuntu VM.
+* **Internet access** on the Ubuntu VM.
 
-Administrative access on your Windows host machine.
+* **Administrative access** on your Windows host machine.
 
-Installation Steps
-1. Install the Wazuh Manager on Ubuntu
+## Installation Steps
+1. **Install the Wazuh Manager on Ubuntu**
 First, you'll need to install the Wazuh manager on your Ubuntu VM. Open a terminal and run the following commands.
 
-Add the Wazuh GPG key: This step verifies the packages you're about to install, ensuring their authenticity.
+**Add the Wazuh GPG key**: This step verifies the packages you're about to install, ensuring their authenticity.
 
-Bash
-
-curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg
+`curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg`
 Download and execute the installation script: The -a flag installs all necessary components (the manager and the indexer), and -i runs the script in interactive mode.
 
 Bash
