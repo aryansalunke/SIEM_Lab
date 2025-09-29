@@ -1,5 +1,5 @@
 # Wazuh Home Lab - SIEM and File Integrity Monitoring
-Welcome! This guide walks you through setting up a basic Security Information and Event Management (SIEM) system for learning and experimentation using Wazuh. This project was inspired by a fantastic guide by Royden Rebello (The Social Dork) and his companion YouTube video, which I highly recommend following along with for a complete walkthrough.
+Welcome! This guide walks you through setting up a basic Security Information and Event Management (SIEM) system for learning and experimentation using **Wazuh**. This project was inspired by a fantastic guide by Royden Rebello (The Social Dork) and his companion YouTube video, which I highly recommend following along with for a complete walkthrough.
 
 My setup includes a Wazuh manager, a Windows agent, and the configuration for file integrity monitoring.
 
