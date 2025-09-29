@@ -1,1 +1,1 @@
-# Wazuh Home Lab - SIEM and File Integrity Monitoring
+#Wazuh Home Lab - SIEM and File Integrity Monitoring
