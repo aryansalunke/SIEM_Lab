@@ -3,12 +3,12 @@ Welcome! This guide walks you through setting up a basic Security Information an
 
 My setup includes a Wazuh manager, a Windows agent, and the configuration for file integrity monitoring.
 
-Lab Architecture
+## Lab Architecture
 The lab is designed with a simple two-component architecture:
 
-Wazuh Manager: This runs on an Ubuntu virtual machine (VM). It's the brain of the operation, responsible for collecting, analyzing, and storing all the data sent by the agents.
+* Wazuh Manager: This runs on an Ubuntu virtual machine (VM). It's the brain of the operation, responsible for collecting, analyzing, and storing all the data sent by the agents.
 
-Wazuh Agent: This runs on my Windows host machine. Its job is to collect system logs and events and send them securely to the Wazuh manager.
+* Wazuh Agent: This runs on my Windows host machine. Its job is to collect system logs and events and send them securely to the Wazuh manager.
 
 To allow seamless communication between the host and the Ubuntu VM, I've used a bridged adapter in VirtualBox. This makes the VM appear as a separate device on my network, just like the Windows machine.
 
